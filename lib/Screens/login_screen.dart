@@ -70,7 +70,7 @@ class LoginScreen extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (_) => Stock(
-                          name: nameController.text,
+                          userName: nameController.text,
                           email: emailController.text,
                         ),
                       ),
@@ -116,7 +116,7 @@ class LoginScreen extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (_) => const Stock(
-                        name: 'Guest',
+                        userName: 'Guest',
                         email: 'guest@email.com',
                       ),
                     ),

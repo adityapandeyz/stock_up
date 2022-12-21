@@ -5,11 +5,11 @@ import '../models/company.dart';
 import '../widgets/popover.dart';
 
 class Stock extends StatefulWidget {
-  final String name;
+  final String userName;
   final String email;
   const Stock({
     super.key,
-    required this.name,
+    required this.userName,
     required this.email,
   });
 
@@ -201,6 +201,7 @@ class _StockState extends State<Stock> {
                                           context,
                                           MaterialPageRoute(
                                             builder: (_) => PurchasedScreen(
+                                              userName: widget.userName,
                                               stockLogo: _company[index].logo,
                                               stockName: _company[index].name,
                                               buyPrice:
